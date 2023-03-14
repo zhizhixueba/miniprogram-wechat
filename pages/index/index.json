@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+      "flow_list": "../../components/flow_list/flow_list"
+  }
+}

@@ -1,0 +1,35 @@
+/**app.wxss**/
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+} 
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    flex: 1;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}

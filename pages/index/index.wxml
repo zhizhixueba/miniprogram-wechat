@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container home">
+    <view class="row ai-center search-box">
+        <text class="flex row ai-center search-input">搜索</text>
+        <image class="cut-btn" src="/assets/icon/landscape.png"/>
+    </view>
+
+    <flow_list itemList="{{items}}"/>
+</view>

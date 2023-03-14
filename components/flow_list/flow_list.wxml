@@ -1,0 +1,28 @@
+<view class="v-flow_list">
+    <view class="v-list">
+        <block wx:for="{{itemList}}" wx:key="index">
+            <view wx:if="{{item.tag == 'left'}}" class="v-item">
+                <image class="v-item-img{{item.mode == 0?'':'2'}}" />
+                <text class="v-item-title">标题</text>
+                <view class="v-item-botm">
+                    <text class="v-item-user">作者</text>
+                    <image class="v-img-down" />
+                    <text class="v-img-down-count">1311</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="v-list">
+        <block wx:for="{{itemList}}" wx:key="index">
+            <view wx:if="{{item.tag == 'right'}}" class="v-item">
+                <image class="v-item-img{{item.mode == 0?'':'2'}}" />
+                <text class="v-item-title">标题</text>
+                <view class="v-item-botm">
+                    <text class="v-item-user">作者</text>
+                    <image class="v-img-down" />
+                    <text class="v-img-down-count">1311</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
