@@ -3,18 +3,27 @@
 }
 
 .search-box {
-    height: 88rpx; 
-    background-color: white;
+  height: 88rpx;
+  background-color: white;
 }
 .search-input {
-    height: 72rpx;
-    margin: 0 32rpx;
-    padding: 0 12rpx;
-    border-radius: 36rpx;
-    background-color: #f3f3f3;
+  color: #979797;
+  font-size: 28rpx;
+  margin-left: 12rpx;
+}
+.search {
+  height: 72rpx;
+  margin: 0 32rpx;
+  padding: 0 16rpx;
+  border-radius: 36rpx;
+  background-color: #f3f3f3;
+}
+.search-ic {
+    width: 32rpx;
+    height: 32rpx;
 }
 .cut-btn {
-    width: 32rpx;
-    height: 48rpx;
-    padding: 32rpx;
+  width: 32rpx;
+  height: 48rpx;
+  padding: 32rpx;
 }

@@ -1,7 +1,10 @@
 <!--index.wxml-->
 <view class="container home">
     <view class="row ai-center search-box">
-        <text class="flex row ai-center search-input">搜索</text>
+        <view class="flex row ai-center search">
+            <image class="search-ic" src="/assets/icon/search_ic.png"/>
+            <text class="search-input">搜索</text>
+        </view>
         <image class="cut-btn" src="/assets/icon/landscape.png"/>
     </view>
 
