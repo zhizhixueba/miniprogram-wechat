@@ -86,7 +86,18 @@ export function request({
         const curCount = count + 1;
 
         if (reload && result.code != 0 && count < maxCount) {
-          request({url, data, method, header, loading, loadStr, toast, reload, maxCount, count: curCount})
+          request({
+            url,
+            data,
+            method,
+            header,
+            loading,
+            loadStr,
+            toast,
+            reload,
+            maxCount,
+            count: curCount,
+          });
         } else {
           loading && _loading(false);
           toast && result.code != 0 && _toast(result.message);
@@ -109,7 +120,7 @@ export function download(url) {
       url,
       success: (res) => {
         _pointLog('《====== 下载成功 ======》》', res);
-        if (res.statusCode === 200) {
+        if (res.statusCode === 200 || res.statusCode === 201) {
           resolve({ code: 0, data: res.tempFilePath });
         } else {
           resolve({

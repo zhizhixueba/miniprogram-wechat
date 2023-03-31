@@ -1,22 +1,47 @@
 // index.js
 
-import {queryHomeList} from '../../modules/api/index'
+import { queryHomeList } from '../../modules/api/index';
 
 Page({
   data: {
-      items: [
-          {name: '', icon: '', mode: 1,tag: 'left'},
-          {name: '', icon: '', mode: 0,tag: 'right'},
-          {name: '', icon: '', mode: 0,tag: 'left'},
-          {name: '', icon: '', mode: 1,tag: 'right'},
-          {name: '', icon: '', mode: 1,tag: 'left'},
-      ]
+    pageNum: 1,
+    pageSize: 20,
+    items: [],
   },
 
-  onLoad:async function() {
-    const {code, data} = await queryHomeList();
-    if(code ==0) {
-        console.log(data)
+  onLoad: function () {
+    const that = this;
+    that._queryPhotoList();
+  },
+  onReady() {},
+
+  onPullDownRefresh: function () {
+    const that = this;
+    leftSize = 0;
+    rightSize = 0;
+    that.setData({ pageNum: 1, items: [] });
+    that._queryPhotoList();
+    wx.stopPullDownRefresh();
+  },
+
+  onReachBottom: function () {
+    const that = this;
+    that._queryPhotoList();
+  },
+
+  _queryPhotoList: async function () {
+    const that = this;
+    const { pageNum, pageSize } = that.data;
+    const { code, data } = await queryHomeList({ pageNum, pageSize });
+    if (code == 0) {
+      const list = data.photos;
+      let items = that.data.items;
+      if (pageNum > 1) {
+        items = items.concat(list);
+      } else {
+        items = list;
+      }
+      that.setData({ items, pageNum: pageNum + 1 });
     }
-  }
-})
+  },
+});

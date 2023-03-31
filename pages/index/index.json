@@ -1,5 +1,6 @@
 {
-  "usingComponents": {
-      "flow_list": "../../components/flow_list/flow_list"
-  }
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "flow_list": "../../components/flow_list/flow_list"
+    }
 }

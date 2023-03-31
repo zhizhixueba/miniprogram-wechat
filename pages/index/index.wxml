@@ -8,5 +8,5 @@
         <image class="cut-btn" src="/assets/icon/landscape.png"/>
     </view>
 
-    <flow_list itemList="{{items}}"/>
+    <flow_list flowItems="{{items}}"/>
 </view>
