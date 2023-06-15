@@ -1,5 +1,6 @@
 {
     "pages": [
+        
         "pages/index/index",
         "pages/nav/nav",
         "pages/msg/msg",
@@ -12,12 +13,27 @@
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
-        
         "list": [
-            {"pagePath": "pages/index/index", "iconPath": "/assets/icon/tab_home_off.png", "selectedIconPath": "/assets/icon/tab_home_on.png"},
-            {"pagePath": "pages/nav/nav", "iconPath": "/assets/icon/tab_nav_off.png", "selectedIconPath": "/assets/icon/tab_nav_on.png"},
-            {"pagePath": "pages/msg/msg", "iconPath": "/assets/icon/tab_msg_off.png", "selectedIconPath": "/assets/icon/tab_msg_on.png"},
-            {"pagePath": "pages/my/my", "iconPath": "/assets/icon/tab_my_off.png", "selectedIconPath": "/assets/icon/tab_my_on.png"}
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/assets/icon/tab_home_off.png",
+                "selectedIconPath": "/assets/icon/tab_home_on.png"
+            },
+            {
+                "pagePath": "pages/nav/nav",
+                "iconPath": "/assets/icon/tab_nav_off.png",
+                "selectedIconPath": "/assets/icon/tab_nav_on.png"
+            },
+            {
+                "pagePath": "pages/msg/msg",
+                "iconPath": "/assets/icon/tab_msg_off.png",
+                "selectedIconPath": "/assets/icon/tab_msg_on.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "/assets/icon/tab_my_off.png",
+                "selectedIconPath": "/assets/icon/tab_my_on.png"
+            }
         ]
     },
     "style": "v2",

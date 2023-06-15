@@ -7,7 +7,7 @@
                 <view class="v-item-botm">
                     <text class="v-item-user">{{item.photographer}}</text>
                     <image class="v-img-down" />
-                    <text class="v-img-down-count">1311</text>
+                    <text class="v-img-down-count">131</text>
                 </view>
             </view>
         </block>
@@ -20,7 +20,7 @@
                 <view class="v-item-botm">
                     <text class="v-item-user">{{item.photographer}}</text>
                     <image class="v-img-down" />
-                    <text class="v-img-down-count">1311</text>
+                    <text class="v-img-down-count">11</text>
                 </view>
             </view>
         </block>

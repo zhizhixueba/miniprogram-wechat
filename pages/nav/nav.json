@@ -1,3 +1,5 @@
 {
-    "usingComponents": {}
+    "usingComponents": {
+        "tab_layout": "../../components/tab_layout/tab_layout"
+    }
 }

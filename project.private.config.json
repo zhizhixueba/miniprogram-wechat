@@ -4,5 +4,18 @@
     "setting": {
         "compileHotReLoad": false,
         "urlCheck": false
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "nav",
+                    "pathName": "pages/nav/nav",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
     }
 }

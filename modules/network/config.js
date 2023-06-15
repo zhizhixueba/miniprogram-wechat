@@ -45,7 +45,7 @@ const env_hosts = {
     auth: 'https://192.168.253.89.location.com',
   },
   test: {
-    def: 'http://192.168.253.89:8097',
+    def: 'http://192.168.0.102:8097',
     auth: 'https://192.168.0.105.location.com',
   },
 };

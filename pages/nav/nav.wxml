@@ -1,2 +1,25 @@
-<!--pages/nav/nav.wxml-->
-<text>pages/nav/nav.wxml</text>
+<view class="container nav">
+    <tab_layout />
+
+    <view>
+        <block wx:for="12345" wx:key="idx" wx:for-item="info" wx:for-index="idx">
+            <view class="column item">
+                <view class="row title-box">
+                    <text class="title">这是标题</text>
+                    <text class="tag">标签</text>
+                </view>
+                <view class="row">
+                    <text class="desc">贫穷的纠缠，病魔的折磨他的意识...</text>
+                    <text class="count">123</text>
+                </view>
+
+                <view class="row item-img-box">
+                <block wx:for="123456" wx:key="index">
+                    <image class="item-img" />
+                </block>
+                    
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

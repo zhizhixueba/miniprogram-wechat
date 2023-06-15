@@ -1,0 +1,12 @@
+<view class="v-tab_layout-box">
+    <view class="v-tab_layout">
+        <view class="v-tab-box">
+            <block wx:for="13234323121" wx:key="index">
+                <view class="v-tab-item v-tab-item-{{index == curIdx?'bg':''}}">
+                    <text class="v-item-text v-item-text-{{index == curIdx ? 'select': ''}}">热门</text>
+                </view>
+            </block>
+        </view>
+        <image class="v-left-icon" src="/assets/icon/portrait.png" />
+    </view>
+</view>

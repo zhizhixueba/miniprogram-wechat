@@ -1,0 +1,52 @@
+/* components/tab_layout/tab_layout.wxss */
+.v-tab_layout-box {
+    height: 96rpx;
+}
+.v-tab_layout {
+  top: 0;
+  height: 96rpx;
+  max-width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+}
+
+.v-tab-box {
+  flex: 1;
+  display: flex;
+  margin-left: 32rpx;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.v-tab-item {
+  margin-right: 16rpx;
+  height: 60rpx;
+  width: 136rpx;
+  min-width: 136rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.v-tab-item-bg {
+  border-radius: 30rpx;
+  background-color: #101010;
+}
+.v-item-text {
+  color: #232323;
+  font-size: 28rpx;
+}
+
+.v-item-text-select {
+  color: white;
+  font-size: 28rpx;
+}
+
+.v-left-icon {
+  min-width: 56rpx;
+  width: 48rpx;
+  height: 56rpx;
+  margin-right: 32rpx;
+}
