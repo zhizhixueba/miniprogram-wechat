@@ -1,5 +1,5 @@
 <view class="container nav">
-    <tab_layout />
+    <tab_layout tabs="{{tabList}}" />
 
     <view>
         <block wx:for="12345" wx:key="idx" wx:for-item="info" wx:for-index="idx">
@@ -14,10 +14,10 @@
                 </view>
 
                 <view class="row item-img-box">
-                <block wx:for="123456" wx:key="index">
-                    <image class="item-img" />
-                </block>
-                    
+                    <block wx:for="123456" wx:key="index">
+                        <image class="item-img" />
+                    </block>
+
                 </view>
             </view>
         </block>

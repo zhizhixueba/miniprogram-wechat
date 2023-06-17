@@ -1,2 +1,47 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="container my">
+  <!-- 顶部栏 -->
+  <view class="top-layout">
+    <image class="user-icon" bindtap="onUserInfo" src="{{user.icon||'/assets/icon/user_ic.png'}}" />
+    <view class="column flex" bindtap="onUserInfo">
+      <text class="user-name">{{user.nickName}}</text>
+      <text class="user-phone">{{user.phone}}</text>
+    </view>
+    <text>会员码</text>
+  </view>
+  <!-- tab -->
+  <view class="row tab-box">
+    <block wx:for="{{tabList}}" wx:key="index">
+      <view class="column center tab-view" hover-class="tab-hover" data-idx="0" bindtap="onTapTab">
+        <text class="tab-num">{{item.num}}</text>
+        <text class="tab-value">{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="vip-box">
+    <text>会员</text>
+  </view>
+
+  <!-- 订单 -->
+  <text class="label-box label-name">消费订单</text>
+  <view class="menu-list">
+    <block wx:for="{{orderTab}}" wx:key="index">
+      <view class="column center flex menu-box" hover-class="tab-hover" bindtap="onTapMenu" data-path="{{item.path}}" data-idx="{{index}}">
+        <image class="menu-icon" src="{{item.icon}}" />
+        <view class="menu-value">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- 广告栏 -->
+
+  <!-- 菜单栏 -->
+  <text class="label-box2 label-name">更多服务</text>
+  <view class="menu-list">
+    <block wx:for="{{menulist}}" wx:key="index">
+      <view class="column center menu-box" hover-class="tab-hover" bindtap="onTapMenu" data-path="{{item.path}}" data-idx="{{index}}">
+        <image class="menu-icon" src="{{item.icon}}" />
+        <view class="menu-value">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>

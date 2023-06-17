@@ -1,28 +1,28 @@
 <view class="v-flow_list">
-    <view class="v-list">
-        <block wx:for="{{itemList}}" wx:key="item">
-            <view wx:if="{{item.tag == 'left'}}" class="v-item">
-                <image class="v-item-img" style="height: {{item.height}}rpx;" mode="aspectFill" src="{{item.src.small}}" />
-                <text class="v-item-title">{{item.index}} {{item.alt}}</text>
-                <view class="v-item-botm">
-                    <text class="v-item-user">{{item.photographer}}</text>
-                    <image class="v-img-down" />
-                    <text class="v-img-down-count">131</text>
-                </view>
-            </view>
-        </block>
-    </view>
-    <view class="v-list">
-        <block wx:for="{{itemList}}" wx:key="item">
-            <view wx:if="{{item.tag == 'right'}}" class="v-item">
-                <image class="v-item-img" style="height: {{item.height}}rpx;" mode="aspectFill" src="{{item.src.small}}" />
-                <text class="v-item-title">{{item.index}} {{item.alt}}</text>
-                <view class="v-item-botm">
-                    <text class="v-item-user">{{item.photographer}}</text>
-                    <image class="v-img-down" />
-                    <text class="v-img-down-count">11</text>
-                </view>
-            </view>
-        </block>
-    </view>
+  <view class="v-list">
+    <block wx:for="{{itemList}}" wx:key="item">
+      <view wx:if="{{item.tag == 'left'}}" class="v-item">
+        <image class="v-item-img" mode="aspectFill" src="{{item.cover}}" />
+        <text class="v-item-title">{{item.title}}</text>
+        <view class="v-item-botm">
+          <text>¥</text>
+          <text class="v-item-price">{{item.price}}</text>
+          <text class="v-item-sales">{{item.sales}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="v-list">
+    <block wx:for="{{itemList}}" wx:key="item">
+      <view wx:if="{{item.tag == 'right'}}" class="v-item">
+        <image class="v-item-img" mode="aspectFill" src="{{item.cover}}" />
+        <text class="v-item-title">{{item.title}}</text>
+        <view class="v-item-botm">
+          <text>¥</text>
+          <text class="v-item-price">{{item.price}}</text>
+          <text class="v-item-sales">{{item.sales}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
 </view>

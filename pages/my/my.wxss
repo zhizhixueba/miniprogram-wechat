@@ -1,1 +1,100 @@
-/* pages/my/my.wxss */
+.my {
+  flex: 1;
+  position: relative;
+  background-color: white;
+}
+.top-layout {
+  z-index: 1;
+  height: 180rpx;
+  padding: 152rpx 32rpx 0 32rpx;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3))
+}
+.user-icon {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 72rpx;
+  margin-right: 32rpx;
+  box-shadow: inset 6rpx 8rpx 12rpx rgba(0, 0, 0, 0.3);
+}
+.user-name {
+  color: #232323;
+  font-size: 44rpx;
+  line-height: 66rpx;
+  font-weight: 500;
+  font-family: PingFangSC-Medium;
+}
+.user-phone {
+  color: #232323;
+  font-size: 24rpx;
+}
+
+.tab-box {
+  z-index: 1;
+  justify-content: space-between;
+}
+.tab-view {
+  width: 230rpx;
+  height: 168rpx;
+  border-radius: 16rpx;
+  position: relative;
+}
+.tab-hover {
+  transform: scale(0.9, 0.9);
+}
+.tab-num {
+  color: #232323;
+  font-size: 40rpx;
+  font-weight: 700;
+  margin-bottom: 4rpx;
+  font-family: PingFangSC-Medium;
+}
+.tab-value {
+  color: #979797;
+  font-size: 28rpx;
+}
+
+.vip-box {
+    margin: 0 32rpx;
+    padding: 24rpx 24rpx;
+    border-radius: 16rpx;
+    background-color: rgba(247, 213, 156, 0.3);
+}
+.label-box {
+  padding: 0 32rpx;
+  margin-top: 56rpx;
+  align-items: center;
+}
+.label-box2 {
+    padding: 0 32rpx;
+    margin-top: 22rpx;
+    align-items: center;
+  }
+.label-name {
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #323232;
+  font-weight: 500;
+}
+
+.menu-list {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 180rpx);
+}
+
+.menu-box {
+  width: 180rpx;
+  height: 168rpx;
+}
+.menu-value {
+  color: #676767;
+  font-size: 26rpx;
+  line-height: 36rpx;
+}
+.menu-icon {
+  width: 52rpx;
+  height: 52rpx;
+  margin-bottom: 12rpx;
+}

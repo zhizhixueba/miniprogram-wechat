@@ -1,12 +1,12 @@
 <!--index.wxml-->
 <view class="container home">
-    <view class="row ai-center search-box">
-        <view class="flex row ai-center search">
-            <image class="search-ic" src="/assets/icon/search_ic.png"/>
-            <text class="search-input">搜索</text>
-        </view>
-        <image class="cut-btn" src="/assets/icon/landscape.png"/>
+  <view class="row ai-center search-box">
+    <view class="flex row ai-center search">
+      <image class="search-ic" src="/assets/icon/search_ic.png" />
+      <text class="search-input">搜索</text>
     </view>
-
-    <flow_list flowItems="{{items}}"/>
+  </view>
+<!-- 广告 -->
+<ad_banner style="margin: 12px 16px;" banners="{{banners}}" />
+  <flow_list flowItems="{{items}}" />
 </view>

@@ -39,9 +39,8 @@ Component({
       let leftSize = 0;
       let rightSize = 0;
       itemList.forEach((e, index) => {
-        const scale = Math.round((e.width * 100) / windowWidth) / 100;
-        const height = Math.round(e.height / scale);
-        // console.log(windowWidth, height, scale, e.width, e.height);
+        const height = index;
+
         if (rightSize >= leftSize) {
           leftSize += height;
           e.tag = 'left';

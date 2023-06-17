@@ -1,6 +1,7 @@
 {
     "enablePullDownRefresh": true,
     "usingComponents": {
+        "ad_banner": "../../components/ad_banner/ad_banner",
         "flow_list": "../../components/flow_list/flow_list"
     }
 }
