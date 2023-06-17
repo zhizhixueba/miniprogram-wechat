@@ -9,7 +9,11 @@
   padding: 152rpx 32rpx 0 32rpx;
   display: flex;
   align-items: center;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3))
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.3)
+  );
 }
 .user-icon {
   width: 128rpx;
@@ -46,7 +50,7 @@
 .tab-num {
   color: #232323;
   font-size: 40rpx;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 4rpx;
   font-family: PingFangSC-Medium;
 }
@@ -56,21 +60,53 @@
 }
 
 .vip-box {
-    margin: 0 32rpx;
-    padding: 24rpx 24rpx;
-    border-radius: 16rpx;
-    background-color: rgba(247, 213, 156, 0.3);
+  margin: 0 32rpx;
+  padding: 28rpx 24rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  background-color: rgba(247, 213, 156, 0.3);
 }
+.vip-icon {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 16rpx;
+    border-radius: 50%;
+    background-color: rgb(247, 175, 41);
+}
+.vip-code {
+    color: white;
+    font-size: 24rpx;
+    padding: 0 32rpx;
+    line-height: 50rpx;
+    border-radius: 24rpx;
+    background-color: #232323;
+}
+.vip-grade {
+  color: #232323;
+  font-size: 32rpx;
+  line-height: 40rpx;
+  margin-right: 6rpx;
+  font-weight: 700;
+  font-family: PingFangSC-Medium;
+}
+.vip-str {
+    color: #323232;
+    font-size: 24rpx;
+    margin-top: 6rpx;
+    line-height: 32rpx;
+  }
+
 .label-box {
   padding: 0 32rpx;
   margin-top: 56rpx;
   align-items: center;
 }
 .label-box2 {
-    padding: 0 32rpx;
-    margin-top: 22rpx;
-    align-items: center;
-  }
+  padding: 0 32rpx;
+  margin-top: 22rpx;
+  align-items: center;
+}
 .label-name {
   font-family: PingFangSC-Medium;
   font-size: 36rpx;

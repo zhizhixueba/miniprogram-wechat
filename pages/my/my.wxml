@@ -6,7 +6,7 @@
       <text class="user-name">{{user.nickName}}</text>
       <text class="user-phone">{{user.phone}}</text>
     </view>
-    <text>会员码</text>
+    <text class="vip-code">会员码</text>
   </view>
   <!-- tab -->
   <view class="row tab-box">
@@ -19,7 +19,12 @@
   </view>
 
   <view class="vip-box">
-    <text>会员</text>
+    <image class="vip-icon"/>
+    <text class="vip-grade">M2</text>
+    <text class="flex vip-str">会员卡</text>
+    <text class="vip-grade">8</text>
+    <text class="vip-str">折</text>
+    <text> 》</text>
   </view>
 
   <!-- 订单 -->
