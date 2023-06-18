@@ -7,7 +7,7 @@ Page({
   data: {
     isLogin: false,
     user: {
-      headPicUrl: '',
+      icon: '/assets/icon/user_ic.png',
       nickName: '立即登录',
       phone: '',
     },
@@ -20,15 +20,15 @@ Page({
       'https://cn.bing.com/th?id=OHR.HuggingDay_ZH-CN2984681593_1920x1200.jpg',
     ],
     tabList: [
-      { name: '待支付', tag: 1, num: 2 },
-      { name: '已支付', tag: 2, num: 3 },
-      { name: '已取消', tag: 3, num: 1 },
+      { name: '积分', tag: 1, num: 2 },
+      { name: '优惠券', tag: 2, num: 3 },
+      { name: '消费券', tag: 3, num: 1 },
     ],
     orderTab: [
       { name: '待支付', icon: '/assets/icon/m_feedback.png', num: 2 },
       { name: '已支付', icon: '/assets/icon/m_feedback.png', num: 3 },
       { name: '已取消', icon: '/assets/icon/m_feedback.png', num: 1 },
-      { name: '全部', icon: '/assets/icon/m_feedback.png', num: 2 },
+      { name: '消费记录', icon: '/assets/icon/m_feedback.png', num: 2 },
     ],
     menulist: [
       {
@@ -41,13 +41,13 @@ Page({
         name: '意见反馈',
         key: '',
         icon: '/assets/icon/m_feedback.png',
-        path: '/pack_sub/pages/feedback/feedback',
+        path: '/pages/my/feedback/feedback',
       },
       {
         name: '团购',
         key: '',
         icon: '/assets/icon/m_gift.png',
-        path: '/pages/my/donate/donate',
+        path: '/pages/my/groupon/groupon',
       },
       {
         name: '关于',
@@ -59,7 +59,7 @@ Page({
         name: '设置',
         key: '',
         icon: '/assets/icon/m_setting.png',
-        path: '/pack_sub/pages/setting/setting',
+        path: '/pages/my/setting/setting',
       },
     ],
   },
@@ -85,10 +85,16 @@ Page({
     });
   },
 
-  onTapTab: function (e) {
+  onOpenVipCode: function() {
+      wx.showToast({
+        title: 'title',
+      })
+  },
+
+  onTapOrder: function (e) {
     let that = this;
     let index = e.currentTarget.dataset.index;
-    let url = '/pages/my/order/order';
+    let url = '/pages/order/order';
     if (!that.data.isLogin) {
       url = '/pages/my/login/login';
     }

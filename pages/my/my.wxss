@@ -4,7 +4,6 @@
   background-color: white;
 }
 .top-layout {
-  z-index: 1;
   height: 180rpx;
   padding: 152rpx 32rpx 0 32rpx;
   display: flex;
@@ -35,7 +34,6 @@
 }
 
 .tab-box {
-  z-index: 1;
   justify-content: space-between;
 }
 .tab-view {
@@ -45,8 +43,11 @@
   position: relative;
 }
 .tab-hover {
-  transform: scale(0.9, 0.9);
+  transform: scale(0.95, 0.95);
 }
+.hover2 {
+    transform: scale(0.98, 0.98);
+  }
 .tab-num {
   color: #232323;
   font-size: 40rpx;
@@ -61,41 +62,62 @@
 
 .vip-box {
   margin: 0 32rpx;
-  padding: 28rpx 24rpx;
+  padding: 28rpx 12rpx 28rpx 24rpx;
   border-radius: 16rpx;
   display: flex;
   align-items: center;
-  background-color: rgba(247, 213, 156, 0.3);
+  background-color: #f2be4530;
+}
+.qrcode-ic {
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 4rpx;
 }
 .vip-icon {
-    width: 48rpx;
-    height: 48rpx;
-    margin-right: 16rpx;
-    border-radius: 50%;
-    background-color: rgb(247, 175, 41);
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 16rpx;
+  border-radius: 50%;
+  background-color: #f2be45;
+}
+.vip-right {
+  width: 48rpx;
+  height: 44rpx;
 }
 .vip-code {
-    color: white;
-    font-size: 24rpx;
-    padding: 0 32rpx;
-    line-height: 50rpx;
-    border-radius: 24rpx;
-    background-color: #232323;
+  color: white;
+  font-size: 26rpx;
+  font-weight: 500;
+  font-family: PingFangSC-Medium;
+
+  padding: 0 24rpx;
+  height: 56rpx;
+  border-radius: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232323;
 }
 .vip-grade {
   color: #232323;
   font-size: 32rpx;
-  line-height: 40rpx;
-  margin-right: 6rpx;
   font-weight: 700;
   font-family: PingFangSC-Medium;
 }
+.vip-big-num {
+  font-size: 56rpx;
+}
 .vip-str {
-    color: #323232;
-    font-size: 24rpx;
-    margin-top: 6rpx;
-    line-height: 32rpx;
-  }
+  color: #323232;
+  font-size: 24rpx;
+  margin-top: 6rpx;
+  margin-left: 6rpx;
+  line-height: 32rpx;
+}
+.vip-smail-str {
+  color: #323232;
+  font-size: 24rpx;
+}
 
 .label-box {
   padding: 0 32rpx;

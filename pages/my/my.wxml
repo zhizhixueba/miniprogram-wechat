@@ -1,52 +1,61 @@
 <view class="container my">
-  <!-- 顶部栏 -->
-  <view class="top-layout">
-    <image class="user-icon" bindtap="onUserInfo" src="{{user.icon||'/assets/icon/user_ic.png'}}" />
-    <view class="column flex" bindtap="onUserInfo">
-      <text class="user-name">{{user.nickName}}</text>
-      <text class="user-phone">{{user.phone}}</text>
+    <!-- 顶部栏 -->
+    <view class="top-layout">
+        <view class="row ai-center" bindtap="onUserInfo" hover-class="hover2">
+            <image class="user-icon" src="{{user.icon}}" />
+            <view class="column">
+                <text class="user-name">{{user.nickName}}</text>
+                <text class="user-phone">{{user.phone}}</text>
+            </view>
+        </view>
+        <view class="flex" />
+        <view class="vip-code" bindtap="onOpenVipCode" hover-class="hover2">
+            <image class="qrcode-ic" src="../../assets/icon/qrcode.png" />
+            <text>会员码</text>
+        </view>
     </view>
-    <text class="vip-code">会员码</text>
-  </view>
-  <!-- tab -->
-  <view class="row tab-box">
-    <block wx:for="{{tabList}}" wx:key="index">
-      <view class="column center tab-view" hover-class="tab-hover" data-idx="0" bindtap="onTapTab">
-        <text class="tab-num">{{item.num}}</text>
-        <text class="tab-value">{{item.name}}</text>
-      </view>
-    </block>
-  </view>
+    <!-- tab -->
+    <view class="row tab-box">
+        <block wx:for="{{tabList}}" wx:key="index">
+            <view class="column center tab-view" hover-class="tab-hover" data-idx="0" bindtap="onTapTab">
+                <text class="tab-num">{{item.num}}</text>
+                <text class="tab-value">{{item.name}}</text>
+            </view>
+        </block>
+    </view>
 
-  <view class="vip-box">
-    <image class="vip-icon"/>
-    <text class="vip-grade">M2</text>
-    <text class="flex vip-str">会员卡</text>
-    <text class="vip-grade">8</text>
-    <text class="vip-str">折</text>
-    <text> 》</text>
-  </view>
+    <view class="vip-box" hover-class="hover2">
+        <image class="vip-icon" />
+        <text class="vip-grade">M2</text>
+        <text class="flex vip-str">会员卡</text>
+        <text class="vip-grade vip-big-num">
+            <text>8</text>
+            <text class="vip-smail-str">折</text>
+        </text>
 
-  <!-- 订单 -->
-  <text class="label-box label-name">消费订单</text>
-  <view class="menu-list">
-    <block wx:for="{{orderTab}}" wx:key="index">
-      <view class="column center flex menu-box" hover-class="tab-hover" bindtap="onTapMenu" data-path="{{item.path}}" data-idx="{{index}}">
-        <image class="menu-icon" src="{{item.icon}}" />
-        <view class="menu-value">{{item.name}}</view>
-      </view>
-    </block>
-  </view>
-  <!-- 广告栏 -->
+        <image class="vip-right" src="../../assets/icon/arr_right_b.png" />
+    </view>
 
-  <!-- 菜单栏 -->
-  <text class="label-box2 label-name">更多服务</text>
-  <view class="menu-list">
-    <block wx:for="{{menulist}}" wx:key="index">
-      <view class="column center menu-box" hover-class="tab-hover" bindtap="onTapMenu" data-path="{{item.path}}" data-idx="{{index}}">
-        <image class="menu-icon" src="{{item.icon}}" />
-        <view class="menu-value">{{item.name}}</view>
-      </view>
-    </block>
-  </view>
+    <!-- 订单 -->
+    <text class="label-box label-name">消费订单</text>
+    <view class="menu-list">
+        <block wx:for="{{orderTab}}" wx:key="index">
+            <view class="column center flex menu-box" hover-class="tab-hover" bindtap="onTapOrder" data-path="{{item.path}}" data-idx="{{index}}">
+                <image class="menu-icon" src="{{item.icon}}" />
+                <view class="menu-value">{{item.name}}</view>
+            </view>
+        </block>
+    </view>
+    <!-- 广告栏 -->
+
+    <!-- 菜单栏 -->
+    <text class="label-box2 label-name">更多服务</text>
+    <view class="menu-list">
+        <block wx:for="{{menulist}}" wx:key="index">
+            <view class="column center menu-box" hover-class="tab-hover" bindtap="onTapMenu" data-path="{{item.path}}" data-idx="{{index}}">
+                <image class="menu-icon" src="{{item.icon}}" />
+                <view class="menu-value">{{item.name}}</view>
+            </view>
+        </block>
+    </view>
 </view>
