@@ -4,8 +4,12 @@
 }
 
 .search-box {
-  height: 88rpx;
+  height: 96rpx;
+  top: -1px;
+  z-index: 1;
+  position: sticky;
   background-color: white;
+  border-bottom: solid 1px #f3f3f3;
 }
 .search-input {
   color: #979797;

@@ -1,7 +1,7 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/nav/nav",
+        "pages/activity/activity",
         "pages/my/my",
         "pages/order/order",
         "pages/my/msg/msg",
@@ -31,7 +31,7 @@
             },
             {
                 "text": "每日优惠",
-                "pagePath": "pages/nav/nav",
+                "pagePath": "pages/activity/activity",
                 "iconPath": "/assets/icon/tab_nav_off.png",
                 "selectedIconPath": "/assets/icon/tab_nav_on.png"
             },

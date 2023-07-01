@@ -1,5 +1,8 @@
-<view class="container nav">
-    <tab_layout tabs="{{tabList}}" />
+<view class="container activity">
+
+    <view class="tab">
+        <tab_layout tabs="{{tabList}}" />
+    </view>
 
     <view>
         <block wx:for="12345" wx:key="idx" wx:for-item="info" wx:for-index="idx">
